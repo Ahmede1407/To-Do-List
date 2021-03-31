@@ -15,7 +15,7 @@ const ToDo = (props) => {
       <div className="todosTodo-text">{title}</div>
 
       <div className="todosTodo-CTA">
-        <div className="CTA-edit">
+        <div className="CTA-edit" onClick={() => props.editTodo(props.todo)}>
           <FeatherIcon icon="edit" size="20" />
         </div>
         <div className="CTA-delete" onClick={() => props.deleteTodo(id)}>

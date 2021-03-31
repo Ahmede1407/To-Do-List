@@ -11,6 +11,7 @@ const ToDos = (props) => {
             key={todo.id}
             handleCompletedTodo={props.handleCompletedTodo}
             deleteTodo={props.deleteTodo}
+            editTodo={props.editTodo}
           />
         );
       })}

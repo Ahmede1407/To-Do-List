@@ -33,10 +33,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  /* direction: rtl; */
-}
-
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -84,7 +80,7 @@ main {
   margin-bottom: 3rem;
 }
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
   .container {
     width: 75vw;
   }
@@ -112,7 +108,7 @@ main {
   transition: 0.3s ease-in-out;
 }
 .todosForm-icon:hover {
-  /* color: var(--color-green); */
+  color: var(--color-green);
 }
 .todosForm-icon.active {
   color: var(--color-green);
